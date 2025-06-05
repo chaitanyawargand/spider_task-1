@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hammer game </title>
+</head>
+<style>
+     body {
+      font-family: Arial, sans-serif;
+      background:#F55B42;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+   .meter-container{
+    height: 100%;
+    width: 60%;
+    margin-left: 5%;
+    position: relative;
+    background-image: url(./images/image1.jpg.jpg);
+   } 
+    .needle {
+      position: absolute;
+      width: 4px;
+      height: 150px;
+      background: white;
+      top:80%;
+      left: 47%;
+     transform-origin: top; 
+    }
+    .controls{
+        margin-top: 10px;
+        display: flex;
+        gap: 30px;
+    }
+   .btn{
+     padding: 15px 30px;
+    font-size: 1.5rem;      
+    border-radius: 8px;    
+    cursor: pointer;
+    background-color: #555;
+    border: none;
+    color: white;
+    transition: background-color 0.3s;     
+}
+.hammer{
+  position: absolute;
+  top: 52%; 
+  left: 50%; 
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+  height: 100px;
+  width: 100px;
+  background:#F55B42;
+  display: none;
+}
+
+
+</style>
+<body>
+<h1>Hammer Strength Game</h1>
+<h2 class="players">Player 1's Turn</h2>
+<div class="meter-container">
+    <div class="needle"></div>
+</div>
+<div class="controls">
+    <button type="button" class="btn stop">stop</button>
+    <button type="button" class="btn restart" >restart</button>
+</div>
+<img class="hammer" src="./WhatsApp Image 2025-05-20 at 00.09.33_881422e1.jpg"/>
+<div class="scores">
+ <h2 class="player-1">player-1 score:0</h2>
+ <h2 class="player-2">player-2 score:0</h2>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
