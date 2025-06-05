@@ -14,9 +14,9 @@ var modeToggle=document.querySelector('.light-mode');
 modeToggle.addEventListener('click',function(){
   document.body.classList.toggle('dark-mode');
   if(document.body.classList.contains('dark-mode')) {
-    modeToggle.src='./assets/svg/dark-mode-icon.svg';
+    modeToggle.src='specific_task/Webdev/assets/svg/dark-mode-icon.svg';
   }else{
-    modeToggle.src='./assets/svg/light-mode-icon.svg';
+    modeToggle.src='specific_task/Webdev/assets/svg/light-mode-icon.svg';
   }
 }
 )
