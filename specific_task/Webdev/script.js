@@ -16,7 +16,7 @@ modeToggle.addEventListener('click',function(){
   if(document.body.classList.contains('dark-mode')) {
     modeToggle.src='specific_task/Webdev/assets/svg/dark-mode-icon.svg';
   }else{
-    modeToggle.src='specific_tadk/webdev/assets/svg/light-mode-icon.svg';
+    modeToggle.src='specific_task/Webdev/assets/svg/light-mode-icon.svg';
   }
 }
 )
